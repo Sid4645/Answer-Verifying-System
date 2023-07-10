@@ -1,0 +1,254 @@
+<style>
+@CHARSET "ISO-8859-1";
+/* CSS Reset   
+----------------------------------------------------------*/
+
+.table1 
+{
+	
+	border-spacing: 10%;
+	padding: 50%;
+	
+}
+table
+{
+	
+	border-spacing: 10%;
+	padding: 50%;
+	
+}
+/* h1 style 
+----------------------------------------------------------*/
+h1
+{
+	font-size: 20px;
+	text-align: center;
+	background-color: #ffffdd;
+	border: solid 1px #888;
+	margin: 0 0 10px 0;
+	padding: 5px;
+}
+
+/* Table style  
+----------------------------------------------------------*/
+table.tbl1
+{
+	width: 150%;
+	
+}
+
+table.tbl1 thead
+{
+	background: #A3C2EA url('../images/tbl_head_bg.png') repeat-x scroll 0 0;
+	color: #333;
+	width: 150%;
+}
+
+table.tbl1 tbody
+{
+	width: 150%;
+}
+
+table.tbl1 tr td,
+table.tbl1 tr th
+{
+	
+	border: solid 1px #888;
+	margin: 0;
+	padding: 4px 0;
+	
+}
+
+table.tbl1 tr td
+{
+	text-align: left;
+	background-color: #fff;
+	color: #444;
+}
+
+table.tbl1 tbody tr.alt td
+{
+	background-color: #e4ecf7;
+}
+
+table.tbl1 tr.over td,
+table.tbl1 tbody tr.alt.over td
+{
+	background-color: #bcd4ec;
+	color: #000;
+}
+
+table.tbl1 a
+{
+	color: #2a4a73;
+	text-decoration: underline;
+}
+
+table.tbl1 a:hover
+{
+	text-decoration: none;
+}
+
+table.tbl1 a:visited
+{
+	color: #bccedc;
+}
+
+/* Define column widths 
+----------------------------------------------------------*/
+table.tbl1 td.id
+{
+	width: 100px;
+}
+table.tbl1 td.fname
+{
+	width: 50px;
+}
+table.tbl1 td.lname
+{
+	width: 100px;
+}
+table.tbl1 td.bdate
+{
+	width: 100px;
+}
+html,body {
+	background-color: #eee;
+}
+
+body {
+	padding-top: 40px;
+}
+
+.container {
+	width: 500px;
+}
+
+/* The white background content wrapper */
+.container>.content {
+	background-color: #fff;
+	padding: 20px;
+	margin: 0 -20px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+}
+
+.login-form {
+	margin-left: 65px;
+}
+
+legend {
+	margin-right: -50px;
+	font-weight: bold;
+	color: #404040;
+}
+
+.tdSuccess {
+	background-color: #468847;
+	color: #FFFFFF
+}
+
+.tdFail {
+	background-color: #b94a48;
+	color: #FFFFFF
+}
+
+.tdWarn {
+	background-color: #c09853;
+	color: #FFFFFF
+}
+
+.loading {
+	position: absolute;
+	display: block;
+	visibility: hidden;
+	background-color: red;
+	color: white;
+	left: 50%;
+}
+
+.tdLogs {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.tdIncidentHeader {
+	background-color: #FFFFFF;
+	color: #000000;
+	font-weight: bold;
+}
+
+tableform {
+	max-width: 100%;
+	background-color: transparent;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.tableform {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.tableform th,.tableform td {
+	padding: 8px;
+	line-height: 20px;
+	text-align: left;
+	vertical-align: top;
+	border-top: 1px solid #dddddd;
+}
+
+.tableform th {
+	font-weight: bold;
+}
+
+.edit {
+	cursor: pointer;
+	border: solid 1px;
+	width: 10px;
+	float: right;
+}
+
+* 									{ margin: 0; padding: 0; }
+body								{ font: 14px Helvetica, Sans-Serif; } 
+#page-wrap							{ width: 800px; margin: 25px auto; } 
+a									{ text-decoration: none; }
+ul									{ list-style: none; }
+p                                   { margin: 15px 0; }
+
+/* 
+	LEVEL ONE
+*/
+ul.dropdown                         { position: relative; }
+ul.dropdown li                      { font-weight: bold; float: left; zoom: 1; background: #ccc; }
+ul.dropdown a:hover		            { color: #000; }
+ul.dropdown a:active                { color: #ffa500; }
+ul.dropdown li a                    { display: block; padding: 4px 8px; border-right: 1px solid #333;
+	 								  color: #222; }
+ul.dropdown li:last-child a         { border-right: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                { background: #F3D673; color: black; position: relative; }
+ul.dropdown li.hover a              { color: black; }
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul 						{ width: 220px; visibility: hidden; position: absolute; top: 100%; left: 0; }
+ul.dropdown ul li 					{ font-weight: normal; background: #f6f6f6; color: #000; 
+									  border-bottom: 1px solid #ccc; float: none; }
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a					{ border-right: none; width: 100%; display: inline-block; } 
+
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul 					{ left: 100%; top: 0; }
+ul.dropdown li:hover > ul 			{ visibility: visible; }
+
+</style>
